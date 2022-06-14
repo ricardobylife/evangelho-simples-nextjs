@@ -6,10 +6,13 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-
-  li {
-    padding: 18px 10px;
+  
+  li{
+    padding: 0 10px;
+    
   }
+
+ 
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -25,6 +28,7 @@ const Ul = styled.ul`
 
     li {
       color: #000000;
+      
     }
   }
 `;
@@ -33,24 +37,24 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
        <li>
-            <a>Filosofia de ministério</a>
+            <a>FILOSOFIA DE MINISTÉRIO</a>
        </li>
         <li>
-            <a>O que cremos</a>
+            <a>O QUE CREMOS</a>
         </li>
         <li>      
-            <a>Pastores</a>  
+            <a>PASTORES</a>  
             </li>   
-            <li><a>Nossa História</a> </li>
+            <li><a>NOSSA HISTÓRIA</a> </li>
         
         <li> 
-            <a>Ministérios</a>
+            <a>MINISTÉRIOS</a>
         </li>
         <li>
-            <a>Nosso Sonho</a>
+            <a>NOSSO SONHO</a>
         </li>
         <li>
-            <a>Localização</a>
+            <a>LOCALIZAÇÃO</a>
         </li>
     </Ul>
   )

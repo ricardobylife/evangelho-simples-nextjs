@@ -4,14 +4,16 @@ import styled from 'styled-components';
 import Burger from './Burger';
 
 const Nav = styled.nav`
+  margin-top: 3em;
   width: 100%;
   height: 55px;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
   .logo {
-    padding: 15px 0;
+    padding-left: 1em;
+    font-size: 2.5em;
   }
 `;
 
