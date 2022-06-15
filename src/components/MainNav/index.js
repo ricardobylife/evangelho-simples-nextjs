@@ -6,6 +6,7 @@ const NavMain = styled.nav`
 
   ul {
     list-style: none;
+    text-align: right;
   }
 `;
 

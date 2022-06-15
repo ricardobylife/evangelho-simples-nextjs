@@ -5,7 +5,7 @@ function Footer(props) {
   return (
     <footer>
       <div>
-        <div className="container">
+        <div className="container" id="social">
           <a href="#">
             <Image
               src="/images/icon-instagram.png"
