@@ -9,12 +9,12 @@ const Ul = styled.ul`
   
   li{
     padding: 0 10px;
+    text-align: center;
     
   }
 
- 
 
-  @media (max-width: 768px) {
+  @media (max-width: 980px) {
     flex-flow: column nowrap;
     background-color: #ffffff;
     position: fixed;
@@ -28,7 +28,7 @@ const Ul = styled.ul`
 
     li {
       color: #000000;
-      
+      padding: 0.25em 0 0.25em 0;
     }
   }
 `;

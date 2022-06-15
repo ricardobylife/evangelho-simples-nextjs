@@ -8,16 +8,17 @@
 html,
 body {
   
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   font-family: 'impactreg' !important;
-  background: url(../public/images/bg-evsimples.png);
-  background-size: cover;
+  background: rgb(95,10,78);
+  background: linear-gradient(59deg, rgba(95,10,78,1) 17%, rgba(255,124,63,1) 54%, rgba(255,63,86,1) 93%);
   color: white;
   padding: 0;
   margin: 0;
   letter-spacing: .6px;
   font-size: 16px;
+  font-weight: 300;
  
 }
 
