@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import RightNav from './RightNav';
 
 const StyledBurger = styled.div`
-  width: 2rem;
+  width: 1rem;
   height: 2rem;
   position: fixed;
   top: 15px;
@@ -42,7 +42,6 @@ const StyledBurger = styled.div`
 
 const Burger = () => {
   const [open, setOpen] = useState(false)
-  
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>

@@ -11,13 +11,15 @@ Logo.propTypes = {
 
 function Logo({ width=400, height=400, title='Evangelho Simples', alt='Evangelho Simples' }) {
   return (
-    <Image
-      src="/images/logo-evsimples-white.png"
-      alt={alt}
-      title={title}
-      width={width}
-      height={height}      
-    /> 
+    <div>
+      <Image
+        src="/images/logo-evsimples-white.png"
+        alt={alt}
+        title={title}
+        width={width}
+        height={height}
+      />
+    </div>
   );
 }
 

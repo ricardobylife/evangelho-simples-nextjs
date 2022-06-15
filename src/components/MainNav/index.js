@@ -8,11 +8,15 @@ const NavMain = styled.nav`
     list-style: none;
     text-align: right;
   }
+  li:hover{
+    font-size: 3.2rem;
+    word-wrap: no-wrap;
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 function MainNav(props) {
   return (
-    <nav>
       <NavMain>
         <ul>
           <li>
@@ -32,7 +36,6 @@ function MainNav(props) {
           </li>
         </ul>
       </NavMain>
-    </nav>
   );
 }
 

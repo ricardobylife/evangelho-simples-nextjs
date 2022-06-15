@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 
 const Ul = styled.ul`
@@ -7,25 +7,25 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   margin-right: 2em;
-  
   li{
     padding: 0 10px;
     text-align: center;
-    
   }
 
 
   @media (max-width: 850px) {
     flex-flow: column nowrap;
     background-color: #ffffff;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
     right: 0;
+    top: 0;
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     height: 100vh;
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    ${({ open }) => open && css`
+      position: fixed;
+    `}
 
     li {
       color: #000000;
@@ -43,12 +43,11 @@ const RightNav = ({ open }) => {
         <li>
             <a>O QUE CREMOS</a>
         </li>
-        <li>      
-            <a>PASTORES</a>  
-            </li>   
+        <li>
+            <a>PASTORES</a>
+            </li>
             <li><a>NOSSA HISTÓRIA</a> </li>
-        
-        <li> 
+        <li>
             <a>MINISTÉRIOS</a>
         </li>
         <li>
