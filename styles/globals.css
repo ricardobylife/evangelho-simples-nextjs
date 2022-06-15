@@ -20,6 +20,7 @@ html {
 
 html,
 body {
+  min-height: 600px;
   font-family: 'Archivo Black', sans-serif;
   color: white;
   padding: 0;
@@ -33,6 +34,7 @@ body {
 
 main {
   margin-top: 5em;
+  margin: auto;
 }
 
 .container {
@@ -43,7 +45,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -58,7 +60,6 @@ footer > div > div > a {
 }
 
 p {
-  white-space: nowrap;
 }
 
 a {
