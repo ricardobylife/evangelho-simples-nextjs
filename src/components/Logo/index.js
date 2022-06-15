@@ -6,10 +6,15 @@ Logo.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   title: PropTypes.string,
-  alt: PropTypes.string,
+  alt: PropTypes.string
 };
 
-function Logo({ width=400, height=400, title='Evangelho Simples', alt='Evangelho Simples' }) {
+function Logo({
+  width = 350,
+  height = 350,
+  title = 'Evangelho Simples',
+  alt = 'Evangelho Simples'
+}) {
   return (
     <div>
       <Image

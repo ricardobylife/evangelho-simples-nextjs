@@ -17,9 +17,11 @@ export default function Home() {
       <Header />
 
       <main>
-        <section className="container" id="mainLogo">
+        <section className="container" id="mainNav">
           <MainNav />
-          <Logo />
+          <div id="mainLogo">
+            <Logo />
+          </div>
         </section>
       </main>
 

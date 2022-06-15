@@ -7,30 +7,41 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   margin-right: 2em;
+  font-size: 12px;
   li{
     padding: 0 10px;
     text-align: center;
   }
 
 
-  @media (max-width: 850px) {
+  @media (max-width: 915px) {
     flex-flow: column nowrap;
     background-color: #ffffff;
+    position: fixed;
     right: 0;
     top: 0;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => open ? 'translateX(12%)' : 'translateX(160%)'};
     height: 100vh;
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    ${({ open }) => open && css`
-      position: fixed;
-    `}
+    
 
     li {
       color: #000000;
-      padding: 0.25em 0 0.25em 0;
+      font-family: 'Chivo', sans-serif;
+      font-weight: 500;
+      padding: 0.4em 0 0.25em 0;
+      cursor: pointer;
     }
+    li:hover{
+      
+      color: #2d2727;
+      text-decoration: underline;
+      transition: 300ms;
+      
+    }
+    
   }
 `;
 
@@ -38,7 +49,7 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
        <li>
-            <a>FILOSOFIA DE MINISTÉRIO</a>
+            <a href='#'>FILOSOFIA DE MINISTÉRIO</a>
        </li>
         <li>
             <a>O QUE CREMOS</a>

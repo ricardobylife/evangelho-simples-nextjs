@@ -8,12 +8,20 @@ const Nav = styled.nav`
   width: 100%;
   height: 55px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  font-family:'Anton', sans-serif;
 
   .logo {
-    padding-left: 1em;
+    margin-left: 0.2em;
     font-size: 2.5em;
+    white-space: nowrap;
+    font-family: 'Anton';
+    
+  }
+
+  a{
+    font-size: 17px;
   }
 `;
 
