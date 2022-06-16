@@ -4,12 +4,6 @@ import styled from 'styled-components';
 const NavMain = styled.nav`
   font-size: 3em;
 
-  @media screen and (max-width: 768px) {
-    li {
-      font-size: 0.7em;
-    }
-  }
-
   ul {
     list-style: none;
     text-align: right;
@@ -21,9 +15,25 @@ const NavMain = styled.nav`
     margin-bottom: -17px;
   }
   li:hover {
-    font-size: 3.2rem;
+    font-size: 3.05rem;
 
     transition: all 0.3s ease-in-out;
+  }
+  @media screen and (max-width: 768px) {
+    li {
+      font-size: 0.95em;
+    }
+    li:hover {
+      font-size: 0.98em;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    li {
+      font-size: 0.7em;
+    }
+    li:hover {
+      font-size: 0.72em;
+    }
   }
 `;
 

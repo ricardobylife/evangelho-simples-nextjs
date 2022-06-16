@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Burger from './Burger';
 
 const Nav = styled.nav`
-  margin-top: 3em;
+  
   width: 100%;
   height: 55px;
   display: flex;
@@ -12,16 +12,23 @@ const Nav = styled.nav`
   align-items: center;
   font-family:'Anton', sans-serif;
 
+ 
+
   .logo {
     margin-left: 0.2em;
     font-size: 2.5em;
     white-space: nowrap;
-    font-family: 'Anton';
-    
+    font-family: 'Anton'; 
   }
 
   a{
-    font-size: 17px;
+    font-size: 1.45em;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (max-width: 768px) {
+    .logo{
+      margin-top: 0;
+    }
   }
 `;
 

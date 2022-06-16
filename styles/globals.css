@@ -20,6 +20,7 @@ html {
 
 html,
 body {
+  height: 100vh;
   min-height: 680px;
   font-family: 'Archivo Black', sans-serif;
   color: white;
@@ -28,17 +29,34 @@ body {
   font-size: 16px;
 }
 
-#mainNav {
-  max-width: 650px;
+@media screen and (min-width: 768px){
+  header{
+    margin-top: 3em;
+  }
+
+}
+#headerLogoNav{
+  max-width: 1300px;
+  margin: auto;
+}
+
+#mainList{
+  padding-left: 1em;
+}
+#mainLogo{
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 main {
-  margin: 3em auto 0 auto;
+  margin-top: 3em;
+  width: 100%;
 }
+
 
 .container {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
 }
@@ -53,7 +71,15 @@ main {
   }
   footer {
     margin-top: 12em;
+    
   }
+}
+
+footer{
+  position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
 }
 
 footer > div {

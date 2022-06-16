@@ -12,6 +12,12 @@ const Ul = styled.ul`
     padding: 0 10px;
     text-align: center;
   }
+  li:hover{
+    text-decoration: underline;
+    color: #756161;
+    transition: 350ms;
+    cursor: pointer;
+  }
 
 
   @media (max-width: 915px) {

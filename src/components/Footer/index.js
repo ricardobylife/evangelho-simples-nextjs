@@ -6,7 +6,7 @@ function Footer(props) {
     <footer>
       <div>
         <div className="container" id="social">
-          <a href="#">
+          <a href="https://www.instagram.com/evangelho.simples/" target="blank">
             <Image
               src="/images/icon-instagram.png"
               width="100"
@@ -15,7 +15,10 @@ function Footer(props) {
               title=""
             />
           </a>
-          <a href="#">
+          <a
+            href="https://www.facebook.com/evangelhosimples.com.br"
+            target="blank"
+          >
             <Image
               src="/images/icon-facebook.png"
               width="100"
@@ -24,7 +27,10 @@ function Footer(props) {
               title=""
             />
           </a>
-          <a href="#">
+          <a
+            href="https://www.youtube.com/c/EvangelhoSimplesOficial/videos"
+            target="blank"
+          >
             <Image
               src="/images/icon-youtube.png"
               width="100"

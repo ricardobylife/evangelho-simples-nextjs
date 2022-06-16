@@ -12,13 +12,18 @@ export default function Home() {
         <title>Evangelho Simples</title>
         <meta name="description" content="Comunidade do Evangelho Simples" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="public/fonts/icons/" />
       </Head>
 
-      <Header />
+      <header id="headerLogoNav">
+        <Header />
+      </header>
 
       <main>
         <section className="container" id="mainNav">
-          <MainNav />
+          <div id="mainList">
+            <MainNav />
+          </div>
           <div id="mainLogo">
             <Logo />
           </div>
