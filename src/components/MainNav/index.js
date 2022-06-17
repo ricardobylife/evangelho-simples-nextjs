@@ -35,6 +35,14 @@ const NavMain = styled.nav`
       font-size: 0.72em;
     }
   }
+  @media screen and (max-width: 425px) {
+    ul {
+      text-align: left;
+    }
+    li {
+      padding-top: 0.1em;
+    }
+  }
 `;
 
 function MainNav(props) {

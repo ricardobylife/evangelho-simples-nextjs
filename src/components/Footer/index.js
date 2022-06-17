@@ -24,7 +24,7 @@ const StyledFooter = styled.div`
     width: 130px;
     height: 130px;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 425px) {
     .socialLogo:hover {
       width: 70px;
       height: 70px;
