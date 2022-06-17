@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   margin: auto;
   width: 100%;
@@ -14,6 +14,22 @@ const StyledFooter = styled.div`
   p {
     padding-top: 0.6em;
   }
+
+  .socialLogo {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .socialLogo:hover {
+    width: 130px;
+    height: 130px;
+  }
+  @media screen and (max-height: 380px) {
+    .socialLogo {
+      width: 80px;
+      height: 80px;
+    }
+  }
 `;
 
 function Footer(props) {
@@ -21,7 +37,7 @@ function Footer(props) {
     <StyledFooter>
       <div>
         <div className="container" id="social">
-          <div id="socialInstagram">
+          <div className="socialLogo">
             <a
               href="https://www.instagram.com/evangelho.simples/"
               target="blank"
@@ -32,45 +48,52 @@ function Footer(props) {
                 height="100"
                 alt=""
                 title=""
+                id="instaLogo"
               />
             </a>
           </div>
-          <a
-            href="https://www.facebook.com/evangelhosimples.com.br"
-            target="blank"
-          >
-            <Image
-              src="/images/icon-facebook.png"
-              width="100"
-              height="100"
-              alt=""
-              title=""
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/c/EvangelhoSimplesOficial/videos"
-            target="blank"
-          >
-            <Image
-              src="/images/icon-youtube.png"
-              width="100"
-              height="100"
-              alt=""
-              title=""
-            />
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=5512992366230&text=Ol%C3%A1.%20Vim%20pelo%20site%20do%20Evangelho%20Simples."
-            target="blank"
-          >
-            <Image
-              src="/images/icon-whatsapp.png"
-              width="100"
-              height="100"
-              alt=""
-              title=""
-            />
-          </a>
+          <div className="socialLogo">
+            <a
+              href="https://www.facebook.com/evangelhosimples.com.br"
+              target="blank"
+            >
+              <Image
+                src="/images/icon-facebook.png"
+                width="100"
+                height="100"
+                alt=""
+                title=""
+              />
+            </a>
+          </div>
+          <div className="socialLogo">
+            <a
+              href="https://www.youtube.com/c/EvangelhoSimplesOficial/videos"
+              target="blank"
+            >
+              <Image
+                src="/images/icon-youtube.png"
+                width="100"
+                height="100"
+                alt=""
+                title=""
+              />
+            </a>
+          </div>
+          <div className="socialLogo">
+            <a
+              href="https://api.whatsapp.com/send?phone=5512992366230&text=Ol%C3%A1.%20Vim%20pelo%20site%20do%20Evangelho%20Simples."
+              target="blank"
+            >
+              <Image
+                src="/images/icon-whatsapp.png"
+                width="100"
+                height="100"
+                alt=""
+                title=""
+              />
+            </a>
+          </div>
         </div>
         <p>Evangelho Simples todos os direitos reservados - 2022</p>
       </div>
