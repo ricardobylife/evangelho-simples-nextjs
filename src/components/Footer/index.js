@@ -26,12 +26,13 @@ const StyledFooter = styled.div`
   }
   @media screen and (max-width: 380px) {
     .socialLogo:hover {
-      width: 100px;
-      height: 100px;
+      width: 70px;
+      height: 70px;
     }
 
-    div {
-      display: flex;
+    .socialLogo {
+      width: 60px;
+      height: 60px;
     }
   }
 `;

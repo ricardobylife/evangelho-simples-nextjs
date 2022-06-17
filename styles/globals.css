@@ -83,14 +83,13 @@ main {
   #mainNav{
     display: flex;
     flex-direction: column;
-    float: inline-end;
+    
+    
   }
   #mainLogo{
     padding-top: 1em;
     width: 200px;
     height: 200px;
-    margin: 0;
-
   }
   #mainList{
     padding: 0;
