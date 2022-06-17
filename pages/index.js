@@ -12,7 +12,6 @@ export default function Home() {
         <title>Evangelho Simples</title>
         <meta name="description" content="Comunidade do Evangelho Simples" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="public/fonts/icons/" />
       </Head>
 
       <header id="headerLogoNav">

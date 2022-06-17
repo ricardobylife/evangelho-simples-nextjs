@@ -9,7 +9,7 @@ const Ul = styled.ul`
   margin-right: 2em;
   font-size: 12px;
   li{
-    padding: 0 10px;
+    padding: 10px;
     text-align: center;
   }
   li:hover{
@@ -22,7 +22,7 @@ const Ul = styled.ul`
 
   @media (max-width: 915px) {
     flex-flow: column nowrap;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.859);
     position: fixed;
     right: 0;
     top: 0;
@@ -31,13 +31,15 @@ const Ul = styled.ul`
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    z-index: 1;
     
 
     li {
       color: #000000;
       font-family: 'Chivo', sans-serif;
-      font-weight: 500;
-      padding: 0.4em 0 0.25em 0;
+      font-weight: 510;
+      font-size: 0.9em;
+      padding: 10% 0 0.25em 0;
       cursor: pointer;
     }
     li:hover{

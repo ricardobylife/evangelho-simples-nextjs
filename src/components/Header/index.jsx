@@ -30,6 +30,22 @@ const Nav = styled.nav`
       margin-top: 0;
     }
   }
+
+  @media screen and (max-width: 350px) {
+    .logo{
+      margin-top: 0;
+      font-size: 2.2em;
+      
+    }
+  }
+
+  @media screen and (max-width: 310px) {
+    .logo{
+      margin-top: 0;
+      font-size: 1.8em;
+      
+    }
+  }
 `;
 
 function Header(props) {

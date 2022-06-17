@@ -43,10 +43,13 @@ body {
 
 #mainList{
   padding-left: 1em;
+  
 }
 #mainLogo{
   padding-left: 1em;
   padding-right: 1em;
+  
+ 
 }
 
 main {
@@ -72,6 +75,7 @@ main {
   }
   footer {
     margin-top: 12em;
+  
     
   }
 }

@@ -14,10 +14,6 @@ const StyledFooter = styled.div`
   p {
     padding-top: 0.6em;
   }
-
-  #socialInstagram {
-    color: black;
-  }
 `;
 
 function Footer(props) {
@@ -63,7 +59,10 @@ function Footer(props) {
               title=""
             />
           </a>
-          <a href="#">
+          <a
+            href="https://api.whatsapp.com/send?phone=5512992366230&text=Ol%C3%A1.%20Vim%20pelo%20site%20do%20Evangelho%20Simples."
+            target="blank"
+          >
             <Image
               src="/images/icon-whatsapp.png"
               width="100"
