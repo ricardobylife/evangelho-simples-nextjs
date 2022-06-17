@@ -14,7 +14,7 @@ const Ul = styled.ul`
   }
   li:hover{
     text-decoration: underline;
-    color: #756161;
+    color: #4a4545;
     transition: 350ms;
     cursor: pointer;
   }

@@ -14,7 +14,7 @@ const Nav = styled.nav`
 
  
 
-  .logo {
+  .logo a{
     margin-left: 0.2em;
     font-size: 2.5em;
     white-space: nowrap;
@@ -53,7 +53,7 @@ function Header(props) {
     <header>
       <Nav>
       <div className="logo">
-      EVANGELHO SIMPLES
+      <a href="#">EVANGELHO SIMPLES</a>
       </div>
       <Burger />
     </Nav>
