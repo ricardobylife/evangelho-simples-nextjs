@@ -24,10 +24,10 @@ const StyledFooter = styled.div`
     width: 130px;
     height: 130px;
   }
-  @media screen and (max-height: 380px) {
-    .socialLogo {
-      width: 80px;
-      height: 80px;
+  @media screen and (max-width: 380px) {
+    .socialLogo:hover {
+      width: 100px;
+      height: 100px;
     }
   }
 `;

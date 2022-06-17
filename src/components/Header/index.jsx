@@ -25,24 +25,34 @@ const Nav = styled.nav`
     font-size: 1.45em;
     letter-spacing: 0.03em;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 950px) {
     .logo{
-      margin-top: 0;
+      margin-top: 10px;
+      
     }
+  
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     .logo{
       margin-top: 0;
-      font-size: 2.2em;
+      font-size: 0.9em;
       
     }
   }
 
-  @media screen and (max-width: 310px) {
+  @media screen and (max-width: 340px) {
     .logo{
       margin-top: 0;
-      font-size: 1.8em;
+      font-size: 0.8em;
+      
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+    .logo{
+      margin-top: 0;
+      font-size: 0.7em;
       
     }
   }

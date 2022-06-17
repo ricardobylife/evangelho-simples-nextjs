@@ -10,6 +10,7 @@ html,
 
 html {
   height: 100%;
+  min-height: 700px;
   background: rgb(95, 10, 78);
   background: linear-gradient(
     59deg,
@@ -22,7 +23,7 @@ html {
 html,
 body {
   
-  min-height: 680px;
+  
   font-family: 'Archivo Black', sans-serif;
   color: white;
   padding: 0;
@@ -48,7 +49,6 @@ body {
 #mainLogo{
   padding-left: 1em;
   padding-right: 1em;
-  
  
 }
 
@@ -64,6 +64,12 @@ main {
   align-items: center;
   flex-wrap: nowrap;
 }
+
+@media screen and (max-width: 952px) {
+ header{
+  margin-top: 0;
+ }
+}
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: row;
@@ -71,7 +77,15 @@ main {
 }
 @media screen and (max-width: 425px) {
   main {
-    margin-top: 5em;
+    margin-top: 4em;
+  }
+  #mainNav{
+    display: flex;
+    flex-direction: column;
+  }
+  #mainLogo{
+    padding-top: 1em;
+
   }
   }
 
@@ -84,3 +98,4 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
