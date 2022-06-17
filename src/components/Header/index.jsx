@@ -49,7 +49,7 @@ const Nav = styled.nav`
     }
   }
 
-  @media screen and (max-width: 290px) {
+  @media screen and (max-width: 300px) {
     .logo{
       margin-top: 0;
       font-size: 0.7em;
