@@ -10,7 +10,6 @@ html,
 
 html {
   height: 100%;
-  min-height: 700px;
   background: rgb(32,10,57);
 background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
 }
