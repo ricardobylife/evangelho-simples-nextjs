@@ -9,7 +9,7 @@ const NavMain = styled.nav`
     font-family: 'Anton', sans-serif;
   }
   li {
-    font-size: clamp(1em, 11vw, 3.2em);
+    font-size: clamp(0.5em, 7vw, 3.2em);
     margin-top: -20px;
     margin-bottom: -17px;
   }

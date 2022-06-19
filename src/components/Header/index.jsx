@@ -63,7 +63,7 @@ function Header(props) {
      
         <Nav>
         <div className="logo">
-        <a href="/">EVANGELHO SIMPLES</a>
+        <a href="#">EVANGELHO SIMPLES</a>
         </div>
         <Burger />
             </Nav>
