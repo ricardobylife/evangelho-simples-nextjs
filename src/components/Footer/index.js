@@ -3,13 +3,15 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
-  position: fixed;
-  bottom: 0;
-  margin: 0 auto;
-  width: 100%;
-  padding-bottom: clamp(4px, 0.2px + 0.5vh, 16px);
-  font-size: 8px;
-  text-align: center;
+  #allFooter {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: clamp(4px, 0.2px + 0.5vh, 16px);
+    font-size: 8px;
+    text-align: center;
+  }
 
   /* #social {
     padding-bottom: 3%;
@@ -35,12 +37,18 @@ const StyledFooter = styled.div`
       height: clamp(40px, 12vh, 100px);
     }
   }
+  @media screen and (max-height: 500px) {
+    #allFooter {
+      position: initial;
+      margin-top: 1em;
+    }
+  }
 `;
 
 function Footer(props) {
   return (
     <StyledFooter>
-      <div>
+      <div id="allFooter">
         <div className="container" id="social">
           <div className="socialLogo">
             <a

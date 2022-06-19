@@ -71,17 +71,17 @@ main {
 }
 @media screen and (max-width: 425px) {
   main {
-    margin-top: 4em;
+    margin-top: clamp(2em,1em + 1vh,4em);
     
   }
   #mainNav{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     
     
   }
   #mainLogo{
-    padding-top: 1em;
+    padding-bottom: 1em;
     width: clamp(70px, 35vh ,300px);
     
   }

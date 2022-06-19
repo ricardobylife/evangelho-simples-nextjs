@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavMain = styled.nav`
-  font-size: 3em;
-
   ul {
     list-style: none;
     text-align: right;
@@ -11,28 +9,29 @@ const NavMain = styled.nav`
     font-family: 'Anton', sans-serif;
   }
   li {
+    font-size: clamp(1em, 11vw, 3.2em);
     margin-top: -20px;
     margin-bottom: -17px;
   }
   li:hover {
-    font-size: 3.05rem;
+    font-size: clamp(1em, 12vw, 3.5em);
 
     transition: all 0.3s ease-in-out;
   }
   @media screen and (max-width: 768px) {
     li {
-      font-size: 0.95em;
+      font-size: clamp(1em, 10vw, 3em);
     }
     li:hover {
-      font-size: 0.98em;
+      font-size: clamp(1em, 11vw, 3.2em);
     }
   }
   @media screen and (max-width: 480px) {
     li {
-      font-size: 0.7em;
+      font-size: clamp(1em, 11vw, 3em);
     }
     li:hover {
-      font-size: 0.72em;
+      font-size: clamp(1em, 12vw, 3.2em);
     }
   }
   @media screen and (max-width: 425px) {
