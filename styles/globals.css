@@ -8,16 +8,15 @@ html,
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  background: rgb(32,10,57);
-background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
-}
 
-html,
+
+
 body {
-  
-  
+  min-height: 100vh;
+  background: rgb(32,10,57);
+  background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Archivo Black', sans-serif;
   color: white;
   padding: 0;
@@ -82,7 +81,7 @@ main {
   }
   #mainLogo{
     padding-bottom: 1em;
-    width: clamp(70px, 35vh ,300px);
+    width: clamp(70px, 33vh ,300px);
     
   }
   #mainList{

@@ -20,18 +20,18 @@ const NavMain = styled.nav`
   }
   @media screen and (max-width: 768px) {
     li {
-      font-size: clamp(1em, 10vw, 3em);
+      font-size: clamp(1em, 9vw, 3em);
     }
     li:hover {
-      font-size: clamp(1em, 11vw, 3.2em);
+      font-size: clamp(1em, 10vw, 3.2em);
     }
   }
   @media screen and (max-width: 480px) {
     li {
-      font-size: clamp(1em, 11vw, 3em);
+      font-size: clamp(1em, 10vw, 3em);
     }
     li:hover {
-      font-size: clamp(1em, 12vw, 3.2em);
+      font-size: clamp(1em, 11vw, 3.2em);
     }
   }
   @media screen and (max-width: 425px) {
