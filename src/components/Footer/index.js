@@ -4,35 +4,31 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.div`
   position: fixed;
-  bottom: 0px;
-  margin: auto;
+  bottom: 0;
+  margin: 0 auto;
   width: 100%;
-  padding: 16px;
+  padding-bottom: clamp(4px, 0.2px + 0.5vh, 16px);
   font-size: 8px;
   text-align: center;
 
-  p {
-    padding-top: 0.6em;
-  }
+  /* #social {
+    padding-bottom: 3%;
+  } */
 
   .socialLogo {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
+    width: clamp(40px, 13vh, 500px);
+    height: clamp(40px, 13vh, 500px);
   }
 
   .socialLogo:hover {
-    width: 130px;
-    height: 130px;
+    width: clamp(40px, 17vh, 200px);
+    height: clamp(40px, 17vh, 200px);
   }
   @media screen and (max-width: 425px) {
-    .socialLogo:hover {
-      width: 70px;
-      height: 70px;
-    }
-
     .socialLogo {
-      width: 60px;
-      height: 60px;
+      width: clamp(40px, 9.5vh, 80px);
+      height: clamp(40px, 9.5vh, 80px);
     }
   }
 `;
@@ -49,8 +45,8 @@ function Footer(props) {
             >
               <Image
                 src="/images/icon-instagram.png"
-                width="100"
-                height="100"
+                width="300"
+                height="300"
                 alt=""
                 title=""
                 id="instaLogo"
@@ -64,8 +60,8 @@ function Footer(props) {
             >
               <Image
                 src="/images/icon-facebook.png"
-                width="100"
-                height="100"
+                width="300"
+                height="300"
                 alt=""
                 title=""
               />
@@ -78,8 +74,8 @@ function Footer(props) {
             >
               <Image
                 src="/images/icon-youtube.png"
-                width="100"
-                height="100"
+                width="300"
+                height="300"
                 alt=""
                 title=""
               />
@@ -92,8 +88,8 @@ function Footer(props) {
             >
               <Image
                 src="/images/icon-whatsapp.png"
-                width="100"
-                height="100"
+                width="300"
+                height="300"
                 alt=""
                 title=""
               />

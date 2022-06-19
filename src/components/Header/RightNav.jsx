@@ -22,7 +22,7 @@ const Ul = styled.ul`
 
   @media (max-width: 952px) {
     flex-flow: column nowrap;
-    background-color: rgba(255, 255, 255, 0.859);
+    background-color: rgba(26, 25, 25, 0.957);
     position: fixed;
     right: 0;
     top: 0;
@@ -35,7 +35,7 @@ const Ul = styled.ul`
     
 
     li {
-      color: #000000;
+      color: #ffffff;
       font-family: 'Chivo', sans-serif;
       font-weight: 510;
       font-size: 0.9em;
@@ -44,7 +44,7 @@ const Ul = styled.ul`
     }
     li:hover{
       
-      color: #2d2727;
+      color: #888585;
       text-decoration: underline;
       transition: 300ms;
       

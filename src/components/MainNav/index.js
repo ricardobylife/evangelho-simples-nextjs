@@ -37,7 +37,7 @@ const NavMain = styled.nav`
   }
   @media screen and (max-width: 425px) {
     ul {
-      text-align: left;
+      text-align: center;
     }
     li {
       padding-top: 0.1em;

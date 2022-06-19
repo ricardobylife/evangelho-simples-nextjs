@@ -11,13 +11,8 @@ html,
 html {
   height: 100%;
   min-height: 700px;
-  background: rgb(95, 10, 78);
-  background: linear-gradient(
-    59deg,
-    rgba(95, 10, 78, 1) 17%,
-    rgba(255, 124, 63, 1) 54%,
-    rgba(255, 63, 86, 1) 93%
-  );
+  background: rgb(32,10,57);
+background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
 }
 
 html,
@@ -88,8 +83,8 @@ main {
   }
   #mainLogo{
     padding-top: 1em;
-    width: 200px;
-    height: 200px;
+    width: clamp(70px, 35vh ,300px);
+    
   }
   #mainList{
     padding: 0;
