@@ -61,7 +61,6 @@ function Footer(props) {
                 height="300"
                 alt=""
                 title=""
-                id="instaLogo"
               />
             </a>
           </div>

@@ -28,7 +28,6 @@ const Nav = styled.nav`
   @media screen and (max-width: 950px) {
     .logo{
       margin-top: 10px;
-      
     }
   
   }
@@ -60,14 +59,16 @@ const Nav = styled.nav`
 
 function Header(props) {
   return (
-    <header>
-      <Nav>
-      <div className="logo">
-      <a href="#">EVANGELHO SIMPLES</a>
-      </div>
-      <Burger />
-    </Nav>
-    </header>
+    
+     
+        <Nav>
+        <div className="logo">
+        <a href="/">EVANGELHO SIMPLES</a>
+        </div>
+        <Burger />
+            </Nav>
+      
+    
   );
 }
 
