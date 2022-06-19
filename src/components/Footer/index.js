@@ -30,6 +30,10 @@ const StyledFooter = styled.div`
       width: clamp(40px, 9.5vh, 80px);
       height: clamp(40px, 9.5vh, 80px);
     }
+    .socialLogo:hover {
+      width: clamp(40px, 12vh, 100px);
+      height: clamp(40px, 12vh, 100px);
+    }
   }
 `;
 
