@@ -13,20 +13,18 @@ const StyledFooter = styled.div`
     text-align: center;
   }
 
-  /* #social {
-    padding-bottom: 3%;
-  } */
-
   .socialLogo {
     padding: 0 5px;
-    width: clamp(40px, 13vh, 500px);
-    height: clamp(40px, 13vh, 500px);
+    width: clamp(40px, 13vh, 110px);
+    height: clamp(40px, 13vh, 110px);
+  }
+  //animation for social in footer
+  .socialLogo:hover {
+    width: clamp(40px, 17vh, 130px);
+    height: clamp(40px, 17vh, 130px);
   }
 
-  .socialLogo:hover {
-    width: clamp(40px, 17vh, 200px);
-    height: clamp(40px, 17vh, 200px);
-  }
+  //media screen to set footer adjustment for mobile
   @media screen and (max-width: 425px) {
     .socialLogo {
       width: clamp(40px, 9.5vh, 80px);
@@ -37,6 +35,7 @@ const StyledFooter = styled.div`
       height: clamp(40px, 12vh, 100px);
     }
   }
+  //media screen to set footer  position to initial, preventing break in landscape use
   @media screen and (max-height: 500px) {
     #allFooter {
       position: initial;

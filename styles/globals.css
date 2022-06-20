@@ -37,6 +37,8 @@ body {
 #mainLogo{
   padding-left: 1em;
   padding-right: 1em;
+  width: clamp(200px,50px + 25vw ,500px);
+  
  
 }
 
@@ -63,6 +65,7 @@ main {
     flex-direction: row;
   }
 }
+/* media screen to adjust the main elements to mobile devices*/
 @media screen and (max-width: 425px) {
   main {
     margin-top: clamp(2em,1em + 1vh,4em);

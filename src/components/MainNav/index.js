@@ -9,31 +9,31 @@ const NavMain = styled.nav`
     font-family: 'Anton', sans-serif;
   }
   li {
-    font-size: clamp(0.5em, 7vw, 3.2em);
+    font-size: clamp(2.5em, 0.6em + 3.5vw, 3.5em);
     margin-top: -20px;
     margin-bottom: -17px;
   }
   li:hover {
-    font-size: clamp(1em, 12vw, 3.5em);
+    font-size: clamp(1.3em, 9vw, 3.5em);
 
     transition: all 0.3s ease-in-out;
   }
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     li {
-      font-size: clamp(1em, 9vw, 3em);
+      font-size: clamp(1em, 7vw, 3em);
     }
     li:hover {
-      font-size: clamp(1em, 10vw, 3.2em);
+      font-size: clamp(1em, 8vw, 3.2em);
     }
-  }
-  @media screen and (max-width: 480px) {
+  } */
+  /* @media screen and (max-width: 480px) {
     li {
       font-size: clamp(1em, 10vw, 3em);
     }
     li:hover {
       font-size: clamp(1em, 11vw, 3.2em);
     }
-  }
+  } */
   @media screen and (max-width: 425px) {
     ul {
       text-align: center;
