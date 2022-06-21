@@ -43,10 +43,10 @@ const NavMain = styled.nav`
     }
     li {
       padding-top: 0.1em;
-      font-size: clamp(2.2em, 0.6em + 3.5vw, 3.5em);
+      font-size: clamp(2.2em, 0.6em + 1em + 3.8vw, 3.5em);
     }
     li:hover {
-      font-size: clamp(2.4em, 0.6em + 3.8vw, 3.5em);
+      font-size: clamp(2.4em, 0.6em + 1em + 4vw, 3.5em);
 
       transition: all 0.3s ease-in-out;
     }
