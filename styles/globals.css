@@ -37,7 +37,7 @@ body {
 #mainLogo{
   padding-left: 1em;
   padding-right: 1em;
-  width: clamp(200px,50px + 25vw ,500px);
+  width: clamp(200px,50px + 25vw ,350px);
   
  
 }
