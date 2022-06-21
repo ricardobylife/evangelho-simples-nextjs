@@ -55,16 +55,14 @@ main {
   flex-wrap: nowrap;
 }
 
+
+/*media screen to remove margin at header logo*/
 @media screen and (max-width: 952px) {
   #headerLogoNav{
   margin-top: 0;
  }
 }
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-}
+
 /* media screen to adjust the main elements to mobile devices*/
 @media screen and (max-width: 425px) {
   main {
