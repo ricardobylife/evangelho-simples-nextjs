@@ -60,6 +60,7 @@ function Footer(props) {
                 height="300"
                 alt=""
                 title=""
+                layout="responsive"
               />
             </a>
           </div>
@@ -74,6 +75,7 @@ function Footer(props) {
                 height="300"
                 alt=""
                 title=""
+                layout="responsive"
               />
             </a>
           </div>
@@ -88,6 +90,7 @@ function Footer(props) {
                 height="300"
                 alt=""
                 title=""
+                layout="responsive"
               />
             </a>
           </div>
@@ -102,6 +105,7 @@ function Footer(props) {
                 height="300"
                 alt=""
                 title=""
+                layout="responsive"
               />
             </a>
           </div>
