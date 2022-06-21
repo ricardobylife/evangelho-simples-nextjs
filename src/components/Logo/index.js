@@ -24,6 +24,7 @@ function Logo({
         title={title}
         width={width}
         height={height}
+        layout="responsive"
       />
     </div>
   );
