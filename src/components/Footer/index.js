@@ -13,6 +13,11 @@ const StyledFooter = styled.div`
     text-align: center;
   }
 
+  p {
+    font-size: 8px;
+    text-align: center;
+  }
+
   .socialLogo {
     padding: 0 5px;
     width: clamp(40px, 13vh, 110px);
