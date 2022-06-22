@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styled, {css} from 'styled-components';
 
 
@@ -70,7 +71,7 @@ const RightNav = ({ open }) => {
             <a>MINISTÉRIOS</a>
         </li>
         <li>
-            <a>NOSSO SONHO</a>
+            <Link href='/nosso-sonho'><a>NOSSO SONHO</a></Link>
         </li>
         <li>
             <a>LOCALIZAÇÃO</a>

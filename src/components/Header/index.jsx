@@ -61,7 +61,7 @@ function Header(props) {
   return (
     
      
-        <Nav>
+        <Nav id="headerLogoNav">
         <div className="logo">
         <a href="#">EVANGELHO SIMPLES</a>
         </div>

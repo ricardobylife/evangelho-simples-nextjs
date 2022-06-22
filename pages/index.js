@@ -14,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header id="headerLogoNav">
-        <Header />
-      </header>
+      <Header />
 
       <main className="contContainer">
         <section className="container" id="mainNav">
