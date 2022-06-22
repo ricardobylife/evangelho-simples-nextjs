@@ -41,10 +41,10 @@ const StyledFooter = styled.div`
     }
   }
   //media screen to set footer  position to initial, preventing break in landscape use
-  @media screen and (max-height: 500px) {
+  @media screen and (max-height: 600px) {
     #allFooter {
       position: initial;
-      margin-top: 1em;
+      margin-top: 2.5em;
     }
   }
 `;

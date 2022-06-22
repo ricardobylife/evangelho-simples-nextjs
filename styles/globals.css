@@ -23,6 +23,7 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -32,6 +33,18 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+
+/* container holdin another container to centralize main section in any screen size*/
+.contContainer{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
 }
 
 #headerLogoNav{
@@ -53,8 +66,8 @@ a {
 }
 
 main {
-  margin-top: 3em;
-  width: 100%;
+ 
+ width: 100%;
 }
 
 /*media screen to remove margin at header logo when burger menu is active*/

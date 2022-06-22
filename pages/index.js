@@ -18,7 +18,7 @@ export default function Home() {
         <Header />
       </header>
 
-      <main>
+      <main className="contContainer">
         <section className="container" id="mainNav">
           <div id="mainList">
             <MainNav />
