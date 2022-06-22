@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import styled from 'styled-components';
+import InstitutionalFooter from '../src/components/Footer/institutionalFooter';
 
 const Main = styled.div`
   .institutional {
@@ -67,7 +68,7 @@ function Dream(props) {
           </div>
         </section>
       </Main>
-      <Footer />
+      <InstitutionalFooter />
     </>
   );
 }
