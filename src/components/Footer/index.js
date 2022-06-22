@@ -39,10 +39,6 @@ const StyledFooter = styled.div`
       width: clamp(40px, 12vh, 100px);
       height: clamp(40px, 12vh, 100px);
     }
-    #allFooter {
-      position: fixed;
-      bottom: 0;
-    }
   }
   //media screen to set footer  position to initial, preventing break in landscape use
   @media screen and (max-height: 600px) {
