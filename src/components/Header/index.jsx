@@ -63,7 +63,7 @@ function Header(props) {
      
         <Nav id="headerLogoNav">
         <div className="logo">
-        <a href="#">EVANGELHO SIMPLES</a>
+        <Link href="/"><a >EVANGELHO SIMPLES</a></Link>
         </div>
         <Burger />
             </Nav>

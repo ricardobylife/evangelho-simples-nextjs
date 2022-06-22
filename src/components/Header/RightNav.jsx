@@ -74,7 +74,7 @@ const RightNav = ({ open }) => {
             <Link href='/nosso-sonho'><a>NOSSO SONHO</a></Link>
         </li>
         <li>
-            <a>LOCALIZAÇÃO</a>
+            <Link href='/localizacao'><a>LOCALIZAÇÃO</a></Link>
         </li>
     </Ul>
   )
