@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const NavMain = styled.nav`
   ul {
@@ -61,7 +62,9 @@ function MainNav(props) {
           <a href="#">SÉRIES</a>
         </li>
         <li>
-          <a href="#">PODCASTS</a>
+          <Link href="/podcasts">
+            <a href="#">PODCASTS</a>
+          </Link>
         </li>
         <li>
           <a href="#">CONTRIBUIÇÃO</a>
