@@ -16,7 +16,7 @@ const NavMain = styled.nav`
   }
   //animation main menu
   li:hover {
-    font-size: clamp(2.7em, 0.6em + 3.8vw, 3.5em);
+    font-size: clamp(2.7em, 0.6em + 3.8vw, 3.6em);
 
     transition: all 0.4s ease-in-out;
   }
@@ -59,7 +59,9 @@ function MainNav(props) {
     <NavMain>
       <ul>
         <li>
-          <a href="#">SÉRIES</a>
+          <Link href="/series">
+            <a href="#">SÉRIES</a>
+          </Link>
         </li>
         <li>
           <Link href="/podcasts">
@@ -67,13 +69,19 @@ function MainNav(props) {
           </Link>
         </li>
         <li>
-          <a href="#">CONTRIBUIÇÃO</a>
+          <Link href="/contribuicao">
+            <a href="#">CONTRIBUIÇÃO</a>
+          </Link>
         </li>
         <li>
-          <a href="#">GABINETE ONLINE</a>
+          <Link href="gabinete">
+            <a href="#">GABINETE ONLINE</a>
+          </Link>
         </li>
         <li>
-          <a href="#">CONTATO</a>
+          <Link href="contato">
+            <a href="#">CONTATO</a>
+          </Link>
         </li>
       </ul>
     </NavMain>

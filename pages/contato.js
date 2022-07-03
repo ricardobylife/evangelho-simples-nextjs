@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
 import styled from 'styled-components';
 import InstitutionalFooter from '../src/components/Footer/institutionalFooter';
 
@@ -34,14 +33,14 @@ const Main = styled.div`
   }
 `;
 
-function Dream(props) {
+function Contact(props) {
   return (
     <>
       <Header />
       <Main>
         <section className="institutional">
           <div className="contempt">
-            <h2>Nosso Sonho</h2>
+            <h2>Contato</h2>
             <p className="textWork">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates vel dolor hic commodi, doloremque cumque voluptatibus
@@ -73,4 +72,4 @@ function Dream(props) {
   );
 }
 
-export default Dream;
+export default Contact;

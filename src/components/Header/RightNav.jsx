@@ -58,23 +58,23 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
        <li>
-            <a href='#'>FILOSOFIA DE MINISTÉRIO</a>
+            <a href='/institucional/filosofia'>FILOSOFIA DE MINISTÉRIO</a>
        </li>
         <li>
-            <a>O QUE CREMOS</a>
+            <a href='/institucional/o-que-cremos'>O QUE CREMOS</a>
         </li>
         <li>
-            <a>PASTORES</a>
+            <a href='/institucional/pastores'>PASTORES</a>
             </li>
-            <li><a>NOSSA HISTÓRIA</a> </li>
+            <li><a href='/institucional/nossa-historia'>NOSSA HISTÓRIA</a> </li>
         <li>
-            <a>MINISTÉRIOS</a>
+            <a href='/institucional/ministerios'>MINISTÉRIOS</a>
         </li>
         <li>
-            <Link href='/nosso-sonho'><a>NOSSO SONHO</a></Link>
+            <Link href='/institucional/nosso-sonho'><a>NOSSO SONHO</a></Link>
         </li>
         <li>
-            <Link href='/localizacao'><a>LOCALIZAÇÃO</a></Link>
+            <Link href='/institucional/localizacao'><a>LOCALIZAÇÃO</a></Link>
         </li>
     </Ul>
   )
