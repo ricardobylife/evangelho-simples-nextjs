@@ -36,14 +36,12 @@ a {
 
 /* container holdin another container to centralize main section in any screen size*/
 .contContainer{
-  height: 70vh;
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
-  
+  padding-top: 8em;
 }
 
 #headerLogoNav{
@@ -91,6 +89,10 @@ main {
     padding-bottom: 1em;
     width: clamp(70px, 33vh ,300px);
     
+  }
+
+  .contContainer{
+    padding-top: 0;
   }
   #mainList{
     padding: 0;
