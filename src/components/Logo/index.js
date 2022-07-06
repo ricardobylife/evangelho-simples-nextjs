@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 Logo.propTypes = {
   width: PropTypes.number,
@@ -11,8 +10,8 @@ Logo.propTypes = {
 };
 
 function Logo({
-  width = 265,
-  height = 265,
+  width = 600,
+  height = 600,
   title = 'Evangelho Simples',
   alt = 'Evangelho Simples'
 }) {

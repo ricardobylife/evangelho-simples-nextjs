@@ -11,7 +11,7 @@ html,
 }
 
 body {
-  min-height: 100vh;
+ min-height: 100vh;
   background: rgb(32,10,57);
   background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
   background-size: cover;
@@ -37,7 +37,7 @@ a {
 /* container holdin another container to centralize main section in any screen size*/
 .contContainer{
   height: 70vh;
-  width: 100vw;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +49,7 @@ a {
 #headerLogoNav{
   max-width: 1300px;
   margin: auto;
-  margin-top: 3em;
+  padding-top: 3em;
 }
 
 #mainList{
@@ -72,7 +72,7 @@ main {
 /*media screen to remove margin at header logo when burger menu is active*/
 @media screen and (max-width: 952px) {
   #headerLogoNav{
-  margin-top: 0;
+  padding-top: 0;
  }
 }
 
