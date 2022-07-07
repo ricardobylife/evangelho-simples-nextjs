@@ -40,8 +40,9 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding-top: 8em;
+  position: sticky;
+  top: 5em;
+  height: 80vh;
 }
 
 #headerLogoNav{
@@ -58,8 +59,6 @@ a {
   padding-left: 1em;
   padding-right: 1em;
   width: clamp(200px,50px + 25vw ,350px);
-  
- 
 }
 
 main {
@@ -77,23 +76,23 @@ main {
 /* media screen to adjust the main elements to mobile devices*/
 @media screen and (max-width: 425px) {
   main {
-    margin-top: clamp(2em,1em + 1vh,4em);
-    
+    margin-top: clamp(2em,1em + 1vh,4em);   
   }
+
   #mainNav{
     display: flex;
-    flex-direction: column-reverse;
-      
+    flex-direction: column-reverse;     
   }
+
   #mainLogo{
     padding-bottom: 1em;
     width: clamp(70px, 33vh ,300px);
-    
   }
 
   .contContainer{
-    padding-top: 0;
+    height: auto;
   }
+  
   #mainList{
     padding: 0;
   }
