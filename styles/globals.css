@@ -1,16 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Chivo:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html,
-body {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  
+}
+
+body {
+ min-height: 100vh;
+  background: rgb(32,10,57);
+  background: linear-gradient(61deg, rgba(32,10,57,1) 10%, rgba(255,13,139,1) 45%, rgba(254, 126, 66, 0.952) ,rgba(255,63,86,1) 78%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Archivo Black', sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 16px; 
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
+
+/* container holdin another container to centralize main section in any screen size*/
+.contContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 5em;
+  height: 80vh;
+}
+
+#headerLogoNav{
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 3em;
+}
+
+#mainList{
+  padding-left: 1em;
+  
+}
+#mainLogo{
+  padding-left: 1em;
+  padding-right: 1em;
+  width: clamp(200px,50px + 25vw ,350px);
+}
+
+main {
+ 
+ width: 100%;
+}
+
+/*media screen to remove margin at header logo when burger menu is active*/
+@media screen and (max-width: 952px) {
+  #headerLogoNav{
+  padding-top: 0;
+ }
+}
+
+/* media screen to adjust the main elements to mobile devices*/
+@media screen and (max-width: 425px) {
+  main {
+    margin-top: clamp(2em,1em + 1vh,4em);   
+  }
+
+  #mainNav{
+    display: flex;
+    flex-direction: column-reverse;     
+  }
+
+  #mainLogo{
+    padding-bottom: 1em;
+    width: clamp(70px, 33vh ,300px);
+  }
+
+  .contContainer{
+    height: auto;
+  }
+  
+  #mainList{
+    padding: 0;
+  }
+  }
+
+  
+
+
