@@ -1,8 +1,8 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
+import PlaylistCard from '../src/components/Cards/PlaylistCard';
 import styled from 'styled-components';
-import Link from 'next/link';
 import InstitutionalFooter from '../src/components/Footer/institutionalFooter';
 
 const Main = styled.div`
@@ -58,31 +58,53 @@ const Main = styled.div`
   }
 `;
 
-function Podcasts() {
+const playlistUrl = 'https://www.googleapis.com/youtube/v3/playlists';
+const apiKey = 'key=AIzaSyDx49X5n8vh4iZsFSIZD9mJMZ1SJZXmybc';
+
+const Series = () => {
+  const [playlistList, setPlaylistList] = useState([]);
+
+  const getPlaylistList = async url => {
+    const res = await fetch(url);
+    const data = await res.json();
+    var series = [];
+    for (let i = 0; i < data.items.length; i++) {
+      let splitted = data.items[i].snippet.title.split(' ');
+      function isEqual(element, index, array) {
+        return element == 'Série';
+      }
+      if (splitted.some(isEqual)) {
+        series.push(data.items[i]);
+      }
+    }
+    console.log(series);
+    setPlaylistList(series);
+  };
+
+  useEffect(() => {
+    const playlistListUrl = `${playlistUrl}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`;
+
+    getPlaylistList(playlistListUrl);
+  }, []);
+
   return (
     <>
       <Header />
       <Main>
         <section className="institutional">
+
           <div className="contempt">
-            <div>
-              <h2>Podcasts 2022</h2>
-            </div>
-            <div className="embeded">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLuCaaySadmfairnrOPQdMUzxWnOzVmSQ6"></iframe>
-            </div>
-            <div>
-              <h2>Podcasts 2021</h2>
-            </div>
-            <div className="embeded">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLuCaaySadmfbqLxO6Yn7shobzN90sswr7"></iframe>
-            </div>
+            {playlistList.length === 0 && <p>Carregando...</p>}
+            {playlistList.length > 0 &&
+              playlistList.map((playlist) =>
+                <PlaylistCard key={playlist.id} playlist={playlist} />
+              )}
           </div>
         </section>
       </Main>
       <InstitutionalFooter />
     </>
   );
-}
+};
 
-export default Podcasts;
+export default Series;
