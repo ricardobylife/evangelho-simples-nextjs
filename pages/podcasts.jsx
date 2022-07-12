@@ -80,7 +80,6 @@ const Podcasts = () => {
         series.push(data.items[i]);
       }
     }
-    console.log(series);
     setPlaylistList(series);
   };
 
