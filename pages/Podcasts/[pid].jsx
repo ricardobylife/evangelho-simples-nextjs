@@ -39,7 +39,7 @@ const Main = styled.div`
   padding-left: 0.5rem;
  }
 `;
-const importVideosURL = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=200&playlistId='
+const importVideosURL = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId='
 const apiKey = 'key=AIzaSyDx49X5n8vh4iZsFSIZD9mJMZ1SJZXmybc';
 
 
