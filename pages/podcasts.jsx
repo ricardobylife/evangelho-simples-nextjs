@@ -70,17 +70,17 @@ const Podcasts = () => {
   const getPlaylistList = async url => {
     const res = await fetch(url);
     const data = await res.json();
-    var series = [];
+    var podcasts = [];
     for (let i = 0; i < data.items.length; i++) {
       let splitted = data.items[i].snippet.title.split(' ');
       function isEqual(element, index, array) {
         return element == 'PODCAST';
       }
       if (splitted.some(isEqual)) {
-        series.push(data.items[i]);
+        podcasts.push(data.items[i]);
       }
     }
-    setPlaylistList(series);
+    setPlaylistList(podcasts);
   };
 
   useEffect(() => {
