@@ -11,8 +11,9 @@ const Main = styled.div`
  .institutional{
   background-color: #f0f8ffc4;
   max-width: 980px ;
-  margin: 2em auto 0 auto;
+  margin: 3em auto 3em auto;
   border-radius: 6px;
+
  }
  .contempt{
   display: flex;
@@ -39,27 +40,48 @@ const Main = styled.div`
   padding-left: 0.5rem;
  }
 `;
-const importVideosURL = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId='
-const apiKey = 'key=AIzaSyDx49X5n8vh4iZsFSIZD9mJMZ1SJZXmybc';
+// const importVideosURL = 'https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId='
 
 
-const PlaylistOpen = () => {
-  const router = useRouter()
-  const { pid } = router.query
-  const playlistToImport = pid
+export async function getStaticProps(context) {
+  const importVideosURL = process.env.YOUTUBE_API_PLAYLIST_ITEMS
+  const apiKey = process.env.YOUTUBE_API_KEY;
+  const { params } = context
+  const data = await fetch(`${importVideosURL}?part=snippet&maxResults=15&playlistId=${params.pid}&${apiKey}`)
+
+  const playlistToImport = await data.json()
+
+  return {
+    props: { playlistToImport }
+  }
+}
+
+export async function getStaticPaths() {
+  const playlistsURL = process.env.YOUTUBE_API_PLAYLISTS
+  const apiKey = process.env.YOUTUBE_API_KEY;
+  const response = await fetch(`${playlistsURL}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`)
+
+  const data = await response.json()
+
+  const paths = data.items.map((playlistToImport) => {
+    return {
+      params: {
+        pid: `${playlistToImport.id}`
+      }
+    }
+  })
+  return { paths, fallback: false }
+}
+
+const PlaylistOpen = (playlistToImport) => {
+
+
   const [playlistList, setPlaylistList] = useState([]);
 
-  const getPlaylistList = async url => {
-    const res = await fetch(url);
-    const data = await res.json();
-
-    setPlaylistList(data.items);
-  };
   useEffect(() => {
-    const playlistListUrl = `${importVideosURL}${playlistToImport}&${apiKey}`;
+    setPlaylistList(playlistToImport.playlistToImport.items)
+  }, [playlistToImport.playlistToImport.items])
 
-    getPlaylistList(playlistListUrl);
-  }, [playlistToImport]);
 
   return (
     <>

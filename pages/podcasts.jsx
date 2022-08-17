@@ -61,11 +61,11 @@ const Main = styled.div`
   }
 `;
 
-const playlistUrl = 'https://www.googleapis.com/youtube/v3/playlists';
-const apiKey = 'key=AIzaSyDx49X5n8vh4iZsFSIZD9mJMZ1SJZXmybc';
+
 
 const Podcasts = () => {
   const [playlistList, setPlaylistList] = useState([]);
+
 
   const getPlaylistList = async url => {
     const res = await fetch(url);
@@ -84,6 +84,8 @@ const Podcasts = () => {
   };
 
   useEffect(() => {
+    const playlistUrl = process.env.NEXT_PUBLIC_YOUTUBE_API_PLAYLISTS;
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
     const playlistListUrl = `${playlistUrl}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`;
 
     getPlaylistList(playlistListUrl);

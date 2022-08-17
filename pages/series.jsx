@@ -58,9 +58,6 @@ const Main = styled.div`
   }
 `;
 
-const playlistUrl = 'https://www.googleapis.com/youtube/v3/playlists';
-const apiKey = 'key=AIzaSyDx49X5n8vh4iZsFSIZD9mJMZ1SJZXmybc';
-
 const Series = () => {
   const [playlistList, setPlaylistList] = useState([]);
 
@@ -70,7 +67,7 @@ const Series = () => {
     var series = [];
     for (let i = 0; i < data.items.length; i++) {
       let splitted = data.items[i].snippet.title.split(' ');
-      function isEqual(element, index, array) {
+      function isEqual(element) {
         return element == 'Série';
       }
       if (splitted.some(isEqual)) {
@@ -80,6 +77,8 @@ const Series = () => {
     setPlaylistList(series);
   };
   useEffect(() => {
+    const playlistUrl = process.env.NEXT_PUBLIC_YOUTUBE_API_PLAYLISTS;
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
     const playlistListUrl = `${playlistUrl}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`;
 
     getPlaylistList(playlistListUrl);
