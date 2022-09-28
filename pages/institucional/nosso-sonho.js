@@ -53,9 +53,9 @@ function Dream(props) {
                 naquilo que o dono da igreja quer... é a igreja que Jesus
                 projetou.
                 <br /> A igreja que queremos ser, tem gente... gente no sentido
-                mais nobre da palavra "fulano é gente"... gente que ame nossos
-                filhos e com quem nossos filhos possam contar se a gente vier a
-                faltar.
+                mais nobre da palavra &quot;fulano é gente&quot;... gente que
+                ame nossos filhos e com quem nossos filhos possam contar se a
+                gente vier a faltar.
               </p>
               <p>
                 A igreja que queremos ser é a igreja que Jesus projetou!
@@ -72,9 +72,9 @@ function Dream(props) {
               </p>
               <p>
                 Uma igreja que tem paciência com as imperfeições alheias,
-                sabedoria para tratar as "adolescências" de todos, energia para
-                incentivar uns aos outros a não desistir do único caminho
-                possível, a cruz!
+                sabedoria para tratar as &quot;adolescências&quot; de todos,
+                energia para incentivar uns aos outros a não desistir do único
+                caminho possível, a cruz!
                 <br /> Nesta igreja falaremos e ouviremos do quanto é legítimo
                 sofrer e até morrer pela fé.
                 <br /> É uma igreja que honra os seus pastores, mas também uma
