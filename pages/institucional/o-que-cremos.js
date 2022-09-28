@@ -30,6 +30,9 @@ const Main = styled.div`
     position: relative;
     visibility: visible;
   }
+  .typeI {
+    margin-left: 1rem;
+  }
 `;
 
 function Believes(props) {
@@ -44,7 +47,7 @@ function Believes(props) {
               <li>
                 A existência de um só e eterno Deus: Pai, Filho e Espírito
                 Santo, um em essência e trino em pessoas.
-                <ol type="I">
+                <ol className="typeI" type="I">
                   <li>
                     Deus Pai, eterno, criador e sustentador de todo o universo,
                     onipotente, onisciente e onipresente, santo, soberano sobre
