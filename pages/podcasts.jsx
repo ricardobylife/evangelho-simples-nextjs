@@ -1,9 +1,12 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
-import styled from 'styled-components';
-import Link from 'next/link';
 import InstitutionalFooter from '../src/components/Footer/institutionalFooter';
+import PlaylistCard from '../src/components/Cards/PlaylistCard';
+import styled from 'styled-components';
+
+
+
 
 const Main = styled.div`
   .institutional {
@@ -58,37 +61,54 @@ const Main = styled.div`
   }
 `;
 
-function Podcasts() {
+
+
+const Podcasts = () => {
+  const [playlistList, setPlaylistList] = useState([]);
+
+
+  const getPlaylistList = async url => {
+    const res = await fetch(url);
+    const data = await res.json();
+    var podcasts = [];
+    for (let i = 0; i < data.items.length; i++) {
+      let splitted = data.items[i].snippet.title.split(' ');
+      function isEqual(element, index, array) {
+        return element == 'PODCAST';
+      }
+      if (splitted.some(isEqual)) {
+        podcasts.push(data.items[i]);
+      }
+    }
+    setPlaylistList(podcasts);
+  };
+
+  useEffect(() => {
+    const playlistUrl = process.env.NEXT_PUBLIC_YOUTUBE_API_PLAYLISTS;
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+    const playlistListUrl = `${playlistUrl}?part=snippet&channelId=UC0lim5sJoP2UC4rZfd7-wJQ&maxResults=100&${apiKey}`;
+
+    getPlaylistList(playlistListUrl);
+  }, []);
+
   return (
     <>
       <Header />
       <Main>
         <section className="institutional">
+
           <div className="contempt">
-            <div>
-              <h2>Série Romanos</h2>
-            </div>
-            <div className="embeded">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLuCaaySadmfY9UcKD1JF7w_lbSuw2nguo"></iframe>
-            </div>
-            <div>
-              <h2>Pregações</h2>
-            </div>
-            <div className="embeded">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLuCaaySadmfYHafLEO5bkeNWUdctq7qq7"></iframe>
-            </div>
-            <div>
-              <h2>Série Hebreus</h2>
-            </div>
-            <div className="embeded">
-              <iframe src="https://www.youtube.com/embed/videoseries?list=PLuCaaySadmfZK9vPB2wXiXlfD_-wHrVz6"></iframe>
-            </div>
+            {playlistList.length === 0 && <p>Carregando...</p>}
+            {playlistList.length > 0 &&
+              playlistList.map((playlist) =>
+                <PlaylistCard key={playlist.id} playlist={playlist} />
+              )}
           </div>
         </section>
       </Main>
       <InstitutionalFooter />
     </>
   );
-}
+};
 
 export default Podcasts;
